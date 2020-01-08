@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html  lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>SpringMVC5+Thymeleaf示例</title>
+</head>
+<body>
+<h1>Spring MVC + Thymeleaf Hello World example</h1>
+<p th:text="'Welcome,'+${product}"></p>
+</body>
+<form th:action="@{/test1}" th:object="${product}" method="POST">
+
+
+    <input type="submit" value="提交"/>
+</form>
+</html>
